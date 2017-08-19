@@ -27,4 +27,7 @@ dependencies {
     compile rootProject.ext.deps.recyclerviewV7
     compile rootProject.ext.deps.design
     compile rootProject.ext.deps.supportV13
+
+    compile rootProject.ext.deps.logger
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
 }

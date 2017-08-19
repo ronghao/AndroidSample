@@ -1,9 +1,15 @@
-package com.haohaohu.androidsample;
+package com.haohaohu.androidsample.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.HandlerThread;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import com.haohaohu.androidsample.R;
+import com.orhanobut.logger.Logger;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,6 +20,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.w(TAG, "onCreate");
+        init();
+    }
+
+    private void init() {
+        initEvent();
+    }
+
+    private void initEvent() {
+        findViewById(R.id.main_goto_second).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -23,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+
     protected void onResume() {
         super.onResume();
         Log.w(TAG, "onResume");
@@ -47,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+
     protected void onRestart() {
         Log.w(TAG, "onRestart");
         super.onRestart();
@@ -70,5 +93,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
         super.onSaveInstanceState(outState, outPersistentState);
+    }
+
+    public void post() {
+        HandlerThread thread = new HandlerThread("name");
+        thread.start();
+        Handler handler = new Handler(thread.getLooper());
+        handler.post(new Runnable() {
+            @Override
+            public void run() {
+                Logger.e("thread");
+            }
+        });
     }
 }

@@ -44,7 +44,7 @@ ext {
             /*json转换*/
             gson                     : "com.google.code.gson:gson:2.7",
             /*log*/
-            logger                   : "com.orhanobut:logger:1.13",
+            logger                   : "com.orhanobut:logger:2.1.1",
             /*Eventbus*/
             eventbus                 : "org.greenrobot:eventbus:3.0.0",
             /* 开源工具类*/
