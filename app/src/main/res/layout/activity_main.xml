@@ -23,4 +23,12 @@
         android:text="跳转到SecondActivity"
         />
 
+    <TextView
+        android:id="@+id/main_goto_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="跳转到LinearLayoutActivity"
+        />
+
 </LinearLayout>

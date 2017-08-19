@@ -11,6 +11,13 @@ import android.view.View;
 import com.haohaohu.androidsample.R;
 import com.orhanobut.logger.Logger;
 
+/**
+ * 主activity
+ * 生命周期研究
+ *
+ * @author haohao on 2017/8/19 16:21
+ * @version v1.0
+ */
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
@@ -32,6 +39,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.main_goto_linearlayout).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, LinearLayoutActivity.class);
                 startActivity(intent);
             }
         });
