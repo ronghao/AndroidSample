@@ -5,6 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import com.haohaohu.androidsample.R;
 
+/**
+ * 辅助研究生命周期
+ *
+ * @author haohao on 2017/8/23 22:38
+ * @version v1.0
+ */
 public class SecondActivity extends AppCompatActivity {
 
     private static final String TAG = "SecondActivity";

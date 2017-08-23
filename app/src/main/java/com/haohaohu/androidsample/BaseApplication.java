@@ -7,6 +7,8 @@ import com.orhanobut.logger.Logger;
 import com.orhanobut.logger.PrettyFormatStrategy;
 
 /**
+ * 主application
+ *
  * @author haohao on 2017/8/19 11:32
  * @version v1.0
  */

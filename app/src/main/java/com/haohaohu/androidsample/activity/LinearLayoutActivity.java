@@ -2,10 +2,14 @@ package com.haohaohu.androidsample.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 import com.haohaohu.androidsample.R;
 
+/**
+ * 研究weight
+ *
+ * @author haohao on 2017/8/23 22:38
+ * @version v1.0
+ */
 public class LinearLayoutActivity extends AppCompatActivity {
 
     @Override
