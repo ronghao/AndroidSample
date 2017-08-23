@@ -12,6 +12,5 @@ public class LinearLayoutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_linear_layout);
-        TextView textView1 = (TextView) findViewById(R.id.linear_linear3_text1);
     }
 }
