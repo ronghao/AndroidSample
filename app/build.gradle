@@ -2,6 +2,16 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.jakewharton.hugo'
 
 android {
+
+  signingConfigs {
+    config {
+      keyAlias rootProject.ext.signingConfig.keyAlias
+      keyPassword rootProject.ext.signingConfig.keyPassword
+      storeFile file('../doc/oldman.jks')
+      storePassword rootProject.ext.signingConfig.storePassword
+    }
+  }
+
   compileSdkVersion rootProject.ext.android.compileSdkVersion
   buildToolsVersion rootProject.ext.android.buildToolsVersion
   defaultConfig {
@@ -15,6 +25,7 @@ android {
     release {
       minifyEnabled false
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+      signingConfig signingConfigs.config
     }
   }
 }
@@ -29,4 +40,6 @@ dependencies {
   compile rootProject.ext.deps.supportV13
 
   compile rootProject.ext.deps.logger
+  compile rootProject.ext.deps.rxandroid
+  compile rootProject.ext.deps.rxjava
 }
