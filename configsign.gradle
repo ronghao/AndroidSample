@@ -1,0 +1,7 @@
+ext {
+  // ------------- 签名 -------------
+  signingConfig = [storePassword: 'androidsample',
+                   keyAlias     : 'androidsample',
+                   keyPassword  : 'androidsample',
+                   keyFile      : '../doc/androidsample.jks']
+}
