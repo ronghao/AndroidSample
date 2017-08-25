@@ -11,7 +11,9 @@ import io.reactivex.annotations.NonNull;
 import io.reactivex.functions.Action;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
+import io.reactivex.functions.Predicate;
 import io.reactivex.schedulers.Schedulers;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 使用RxJava的activity
@@ -36,6 +38,32 @@ public class RXActivity extends AppCompatActivity {
                     public String apply(@NonNull String s) throws Exception {
                         Logger.e("map");
                         return s;
+                    }
+                })
+                .filter(new Predicate<String>() {
+                    @Override
+                    public boolean test(@NonNull String s) throws Exception {
+                        Logger.e("filter");
+                        return s.equals("1");
+                    }
+                })
+                .delay(10, TimeUnit.SECONDS)
+                .doOnDispose(new Action() {
+                    @Override
+                    public void run() throws Exception {
+                        Logger.e("doOnDispose");
+                    }
+                })
+                .doOnNext(new Consumer<String>() {
+                    @Override
+                    public void accept(String s) throws Exception {
+                        Logger.e("doOnNext");
+                    }
+                })
+                .doOnError(new Consumer<Throwable>() {
+                    @Override
+                    public void accept(Throwable throwable) throws Exception {
+                        Logger.e("doOnError");
                     }
                 })
                 .doOnComplete(new Action() {
