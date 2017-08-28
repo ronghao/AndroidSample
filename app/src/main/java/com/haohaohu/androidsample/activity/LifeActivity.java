@@ -1,25 +1,33 @@
 package com.haohaohu.androidsample.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import com.haohaohu.androidsample.R;
 
-/**
- * 辅助研究生命周期
- *
- * @author haohao on 2017/8/23 22:38
- * @version v1.0
- */
-public class SecondActivity extends AppCompatActivity {
+public class LifeActivity extends AppCompatActivity {
 
-    private static final String TAG = "SecondActivity";
+    private static final String TAG = "LifeActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_life);
         Log.w(TAG, "onCreate");
+        init();
+    }
+
+    private void init() {
+        findViewById(R.id.life_goto_second).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LifeActivity.this, Life2Activity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -70,5 +78,13 @@ public class SecondActivity extends AppCompatActivity {
     protected void onSaveInstanceState(Bundle outState) {
         Log.w(TAG, "onSaveInstanceState");
         super.onSaveInstanceState(outState);
+    }
+
+    /**
+     * API 21添加
+     */
+    @Override
+    public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
+        super.onSaveInstanceState(outState, outPersistentState);
     }
 }
