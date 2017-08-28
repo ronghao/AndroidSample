@@ -20,7 +20,7 @@
       android:layout_width="match_parent"
       android:layout_height="30dp"
       android:gravity="center"
-      android:text="跳转到SecondActivity"
+      android:text="生命周期"
       />
 
   <TextView

@@ -8,4 +8,14 @@
     <item name="colorAccent">@color/colorAccent</item>
   </style>
 
+
+  <style name="LaunchTheme" parent="Theme.AppCompat.NoActionBar">
+    <item name="windowNoTitle">true</item>
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/transparent</item>
+    <item name="colorAccent">@color/transparent</item>
+    <item name="android:windowBackground">@drawable/launch_screen</item>
+    <item name="android:windowIsTranslucent">true</item>
+  </style>
+
 </resources>

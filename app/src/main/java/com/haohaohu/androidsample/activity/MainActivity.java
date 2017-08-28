@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
-import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -13,7 +12,7 @@ import com.orhanobut.logger.Logger;
 
 /**
  * 主activity
- * 生命周期研究
+ * 解决加载黑屏问题
  *
  * @author haohao on 2017/8/19 16:21
  * @version v1.0
@@ -24,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.w(TAG, "onCreate");
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.main_goto_second).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                Intent intent = new Intent(MainActivity.this, LifeActivity.class);
                 startActivity(intent);
             }
         });
@@ -58,64 +58,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Log.w(TAG, "onStart");
-    }
-
-    @Override
-
-    protected void onResume() {
-        super.onResume();
-        Log.w(TAG, "onResume");
-    }
-
-    @Override
-    protected void onPause() {
-        Log.w(TAG, "onPause");
-        super.onPause();
-    }
-
-    @Override
-    protected void onStop() {
-        Log.w(TAG, "onStop");
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        Log.w(TAG, "onDestroy");
-        super.onDestroy();
-    }
-
-    @Override
-
-    protected void onRestart() {
-        Log.w(TAG, "onRestart");
-        super.onRestart();
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        Log.w(TAG, "onRestoreInstanceState");
-        super.onRestoreInstanceState(savedInstanceState);
-    }
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        Log.w(TAG, "onSaveInstanceState");
-        super.onSaveInstanceState(outState);
-    }
-
-    /**
-     * API 21添加
-     */
-    @Override
-    public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
-        super.onSaveInstanceState(outState, outPersistentState);
     }
 
     public void post() {
