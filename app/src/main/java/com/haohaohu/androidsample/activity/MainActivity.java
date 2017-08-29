@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import com.haohaohu.androidsample.R;
+import com.haohaohu.androidsample.activity.java.JavaActivity;
+import com.haohaohu.androidsample.activity.java.ThreadActivity;
 import com.orhanobut.logger.Logger;
 
 /**
@@ -55,6 +57,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, RXActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.main_goto_java_thread).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, JavaActivity.class);
                 startActivity(intent);
             }
         });

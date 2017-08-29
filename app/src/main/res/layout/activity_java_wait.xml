@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haohaohu.androidsample.activity.java.JavaWaitActivity"
+    >
+
+  <TextView
+      android:id="@+id/java_wait_start"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:gravity="center"
+      android:text="线程start操作"
+      />
+
+  <TextView
+      android:id="@+id/java_wait_wait"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:gravity="center"
+      android:text="wait操作"
+      />
+
+  <TextView
+      android:id="@+id/java_wait_notify"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:gravity="center"
+      android:text="notify操作"
+      />
+
+  <TextView
+      android:id="@+id/java_wait_notifyall"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:gravity="center"
+      android:text="notifyall操作"
+      />
+  <TextView
+      android:id="@+id/java_wait_result"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="结果"
+      />
+
+</LinearLayout>

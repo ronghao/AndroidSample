@@ -8,35 +8,54 @@
     tools:context="com.haohaohu.androidsample.activity.MainActivity"
     >
 
-  <TextView
-      android:id="@+id/main_text"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Hello World!"
-      />
-
-  <TextView
-      android:id="@+id/main_goto_second"
+  <ScrollView
       android:layout_width="match_parent"
-      android:layout_height="30dp"
-      android:gravity="center"
-      android:text="生命周期"
-      />
+      android:layout_height="match_parent"
+      >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+      <TextView
+          android:id="@+id/main_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Hello World!"
+          />
 
-  <TextView
-      android:id="@+id/main_goto_linearlayout"
-      android:layout_width="match_parent"
-      android:layout_height="30dp"
-      android:gravity="center"
-      android:text="跳转到LinearLayoutActivity"
-      />
+      <TextView
+          android:id="@+id/main_goto_second"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:gravity="center"
+          android:text="生命周期"
+          />
 
-  <TextView
-      android:id="@+id/main_goto_rx"
-      android:layout_width="match_parent"
-      android:layout_height="30dp"
-      android:gravity="center"
-      android:text="跳转到RXActivity"
-      />
+      <TextView
+          android:id="@+id/main_goto_linearlayout"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:gravity="center"
+          android:text="跳转到LinearLayoutActivity"
+          />
+
+      <TextView
+          android:id="@+id/main_goto_rx"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:gravity="center"
+          android:text="跳转到RXActivity"
+          />
+
+      <TextView
+          android:id="@+id/main_goto_java_thread"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:gravity="center"
+          android:text="跳转到ThreadActivity"
+          />
+    </LinearLayout>
+  </ScrollView>
 
 </LinearLayout>

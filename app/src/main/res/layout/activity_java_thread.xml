@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haohaohu.androidsample.activity.java.ThreadActivity"
+    >
+
+  <TextView
+      android:id="@+id/java_thread_future"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:gravity="center"
+      android:text="future操作 3s后更新界面"
+      />
+
+  <TextView
+      android:id="@+id/java_thread_result"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="结果"
+      />
+
+</LinearLayout>
