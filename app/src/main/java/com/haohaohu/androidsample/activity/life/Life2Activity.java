@@ -1,4 +1,4 @@
-package com.haohaohu.androidsample.activity;
+package com.haohaohu.androidsample.activity.life;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -15,12 +15,17 @@ import com.haohaohu.androidsample.R;
 public class Life2Activity extends AppCompatActivity {
 
     private static final String TAG = "生命周期2";
+    private static final String STATE_DATA = "data";
+    private String value;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_left2);
         Log.w(TAG, "onCreate");
+        if (savedInstanceState != null) {
+            value = savedInstanceState.getString(STATE_DATA);
+        }
         initEvent();
     }
 
@@ -81,5 +86,6 @@ public class Life2Activity extends AppCompatActivity {
     protected void onSaveInstanceState(Bundle outState) {
         Log.w(TAG, "onSaveInstanceState");
         super.onSaveInstanceState(outState);
+        outState.putString(STATE_DATA, value);
     }
 }

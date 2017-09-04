@@ -9,7 +9,7 @@ import android.util.Log;
 import android.view.View;
 import com.haohaohu.androidsample.R;
 import com.haohaohu.androidsample.activity.java.JavaActivity;
-import com.haohaohu.androidsample.activity.java.ThreadActivity;
+import com.haohaohu.androidsample.activity.life.LifeActivity;
 import com.orhanobut.logger.Logger;
 
 /**

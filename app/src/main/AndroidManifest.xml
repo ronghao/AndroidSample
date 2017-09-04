@@ -23,9 +23,9 @@
     </activity>
     <activity android:name=".activity.RXActivity">
     </activity>
-    <activity android:name=".activity.LifeActivity">
+    <activity android:name=".activity.life.LifeActivity">
     </activity>
-    <activity android:name=".activity.Life2Activity">
+    <activity android:name=".activity.life.Life2Activity">
     </activity>
     <activity android:name=".activity.java.ThreadActivity">
     </activity>

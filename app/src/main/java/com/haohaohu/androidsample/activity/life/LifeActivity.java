@@ -1,4 +1,4 @@
-package com.haohaohu.androidsample.activity;
+package com.haohaohu.androidsample.activity.life;
 
 import android.content.Intent;
 import android.os.Bundle;
