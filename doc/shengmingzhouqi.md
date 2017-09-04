@@ -33,3 +33,16 @@
 + handler有未处理完成的message
  
 # activty销毁 static不会被销毁
+
+# 如果activity崩溃后生命周期
++ 所有activity不执行onDestory，显示到的activity重新生命周期：onCreate -> onStart -> onResume
+
+
+# 内存低数据需要存储数据
++ onSaveInstanceState存储
+    + 数据需要持久化
+        + SharedPreferences
+        + 缓存
+    + 数据不需要持久化
+        + 
+        + ![](pic/shengmingzhouqi_1.jpg)
