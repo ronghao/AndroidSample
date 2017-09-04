@@ -21,3 +21,15 @@
     + onPause -> onStop -> onDestory -> onCreate -> onStart -> onResume
 + 横竖屏切换 处理
     + android:configChanges="keyboardHidden|orientation|screenSize"
+
+
+
+# onfinish 任务
++ Dismiss any dialogs the activity was managing
++ Close any cursors the activity was managing
++ Close any open search dialog
+
+# onDestroy未正确执行 
++ handler有未处理完成的message
+ 
+# activty销毁 static不会被销毁

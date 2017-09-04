@@ -10,7 +10,7 @@ import com.haohaohu.androidsample.R;
 
 public class LifeActivity extends AppCompatActivity {
 
-    private static final String TAG = "LifeActivity";
+    private static final String TAG = "生命周期";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

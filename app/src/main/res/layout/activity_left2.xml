@@ -7,4 +7,12 @@
     tools:context="com.haohaohu.androidsample.activity.Life2Activity"
     >
 
+  <TextView
+      android:id="@+id/life2_goto_second"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:gravity="center"
+      android:text="崩溃"
+      />
+
 </RelativeLayout>
