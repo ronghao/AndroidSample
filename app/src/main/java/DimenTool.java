@@ -50,7 +50,7 @@ public class DimenTool {
                     sw720.append(start).append(num * 2.25).append(end).append("\r\n");
                     sw800.append(start).append(num * 2.5).append(end).append("\r\n");
                     w820.append(start).append(num * 2.56).append(end).append("\r\n");
-                    bigScreen.append(start).append(num * 3).append(end).append("\r\n");
+                    bigScreen.append(start).append(num * 2).append(end).append("\r\n");
                 } else {
                     sw240.append(tempString).append("");
                     sw480.append(tempString).append("");
@@ -81,15 +81,15 @@ public class DimenTool {
             String sw720file = "./app/src/main/res/values-sw720dp-land/dimens.xml";
             String sw800file = "./app/src/main/res/values-sw800dp-land/dimens.xml";
             String w820file = "./app/src/main/res/values-w820dp/dimens.xml";
-            String bigScreenFile = "./app/src/main/res/values-xxlarge/dimens.xml";
+            String bigScreenFile = "./app/src/main/res/values-large/dimens.xml";
 
             //将新的内容，写入到指定的文件中去
-            writeFile(sw240file, sw240.toString());
-            writeFile(sw480file, sw480.toString());
-            writeFile(sw600file, sw600.toString());
-            writeFile(sw720file, sw720.toString());
-            writeFile(sw800file, sw800.toString());
-            writeFile(w820file, w820.toString());
+            //writeFile(sw240file, sw240.toString());
+            //writeFile(sw480file, sw480.toString());
+            //writeFile(sw600file, sw600.toString());
+            //writeFile(sw720file, sw720.toString());
+            //writeFile(sw800file, sw800.toString());
+            //writeFile(w820file, w820.toString());
             writeFile(bigScreenFile, bigScreen.toString());
         } catch (IOException e) {
             e.printStackTrace();
