@@ -5,3 +5,4 @@ android 示例 分析,使用,应用场景,性能,源码
 + [activity生命周期 demo演示](./doc/shengmingzhouqi.md)
 + [gravity](./doc/gravity.md)
     + 实现->LinearLayoutActivity
++ [activity 转场动画 浅析](./doc/activityanim.md)
