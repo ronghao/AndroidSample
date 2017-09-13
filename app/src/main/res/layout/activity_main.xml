@@ -49,6 +49,14 @@
           android:gravity="center"
           android:text="跳转到ThreadActivity"
           />
+
+      <TextView
+          android:id="@+id/main_goto_activity_anim"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:gravity="center"
+          android:text="跳转到Activity动画"
+          />
     </LinearLayout>
   </ScrollView>
 

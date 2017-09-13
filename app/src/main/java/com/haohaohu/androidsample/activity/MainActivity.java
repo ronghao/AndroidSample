@@ -5,9 +5,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import com.haohaohu.androidsample.R;
+import com.haohaohu.androidsample.activity.actanim.ActAnimActivity;
 import com.haohaohu.androidsample.activity.java.JavaActivity;
 import com.haohaohu.androidsample.activity.life.LifeActivity;
 import com.orhanobut.logger.Logger;
@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.w(TAG, "onCreate");
         init();
     }
 
@@ -65,6 +64,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, JavaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.main_goto_activity_anim).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ActAnimActivity.class);
                 startActivity(intent);
             }
         });

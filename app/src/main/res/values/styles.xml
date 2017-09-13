@@ -18,4 +18,52 @@
     <item name="android:windowIsTranslucent">true</item>
   </style>
 
+  <style name="ActAnimTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+  <style name="ActAnim1Theme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:windowAnimationStyle">@style/Animation</item>
+  </style>
+
+  <style name="ActAnim2Theme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+  <style name="ActAnim3Theme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowAnimationStyle">@style/animation_translucent</item>
+  </style>
+
+  <!--动画-->
+  <style name="Animation">
+    <!--A打开B时，B的出现动画-->
+    <item name="android:activityOpenEnterAnimation">@anim/right_to_center</item>
+    <!--A打开B时，A的消失动画-->
+    <item name="android:activityOpenExitAnimation">@anim/center_to_left</item>
+    <!--A打开B后，关闭B时，A的出现动画-->
+    <item name="android:activityCloseEnterAnimation">@anim/left_to_center</item>
+    <!--A打开B后，关闭B时，B的消失动画-->
+    <item name="android:activityCloseExitAnimation">@anim/center_to_right</item>
+  </style>
+
+  <style name="animation_translucent" parent="@android:style/Animation.Translucent">
+    <item name="android:windowEnterAnimation">@anim/right_to_center</item>
+    <item name="android:windowExitAnimation">@anim/center_to_right</item>
+  </style>
+
 </resources>
