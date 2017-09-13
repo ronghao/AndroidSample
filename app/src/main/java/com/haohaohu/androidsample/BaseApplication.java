@@ -34,6 +34,7 @@ public class BaseApplication extends Application {
     private void initLogger() {
         FormatStrategy formatStrategy = PrettyFormatStrategy.newBuilder()
                 .showThreadInfo(true)  //  Whether to show thread info or not. Default true
+                .tag("Sample")
                 .methodCount(0)         // (Optional) How many method line to show. Default 2
                 .methodOffset(5)        //  Hides internal method calls up to offset. Default 5
                 .build();

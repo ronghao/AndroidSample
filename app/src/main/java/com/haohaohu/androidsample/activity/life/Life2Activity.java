@@ -2,9 +2,9 @@ package com.haohaohu.androidsample.activity.life;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import com.haohaohu.androidsample.R;
+import com.orhanobut.logger.Logger;
 
 /**
  * 辅助研究生命周期
@@ -22,7 +22,7 @@ public class Life2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_left2);
-        Log.w(TAG, "onCreate");
+        Logger.t(TAG).w("onCreate");
         if (savedInstanceState != null) {
             value = savedInstanceState.getString(STATE_DATA);
         }
@@ -41,50 +41,50 @@ public class Life2Activity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        Log.w(TAG, "onStart");
+        Logger.t(TAG).w("onStart");
     }
 
     @Override
 
     protected void onResume() {
         super.onResume();
-        Log.w(TAG, "onResume");
+        Logger.t(TAG).w("onResume");
     }
 
     @Override
     protected void onPause() {
-        Log.w(TAG, "onPause");
+        Logger.t(TAG).w("onPause");
         super.onPause();
     }
 
     @Override
     protected void onStop() {
-        Log.w(TAG, "onStop");
+        Logger.t(TAG).w("onStop");
         super.onStop();
     }
 
     @Override
     protected void onDestroy() {
-        Log.w(TAG, "onDestroy");
+        Logger.t(TAG).w("onDestroy");
         super.onDestroy();
     }
 
     @Override
 
     protected void onRestart() {
-        Log.w(TAG, "onRestart");
+        Logger.t(TAG).w("onRestart");
         super.onRestart();
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        Log.w(TAG, "onRestoreInstanceState");
+        Logger.t(TAG).w("onRestoreInstanceState");
         super.onRestoreInstanceState(savedInstanceState);
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
-        Log.w(TAG, "onSaveInstanceState");
+        Logger.t(TAG).w("onSaveInstanceState");
         super.onSaveInstanceState(outState);
         outState.putString(STATE_DATA, value);
     }
