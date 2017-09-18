@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import com.haohaohu.androidsample.R;
 import com.orhanobut.logger.Logger;
@@ -16,7 +17,7 @@ public class LifeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_life);
-        Logger.t(TAG).w("onCreate");
+        Log.w(TAG,"onCreate");
         init();
     }
 
@@ -33,50 +34,50 @@ public class LifeActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        Logger.t(TAG).w("onStart");
+        Log.w(TAG,"onStart");
     }
 
     @Override
 
     protected void onResume() {
         super.onResume();
-        Logger.t(TAG).w("onResume");
+        Log.w(TAG,"onResume");
     }
 
     @Override
     protected void onPause() {
-        Logger.t(TAG).w("onPause");
+        Log.w(TAG,"onPause");
         super.onPause();
     }
 
     @Override
     protected void onStop() {
-        Logger.t(TAG).w("onStop");
+        Log.w(TAG,"onStop");
         super.onStop();
     }
 
     @Override
     protected void onDestroy() {
-        Logger.t(TAG).w("onDestroy");
+        Log.w(TAG,"onDestroy");
         super.onDestroy();
     }
 
     @Override
 
     protected void onRestart() {
-        Logger.t(TAG).w("onRestart");
+        Log.w(TAG,"onRestart");
         super.onRestart();
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        Logger.t(TAG).w("onRestoreInstanceState");
+        Log.w(TAG,"onRestoreInstanceState");
         super.onRestoreInstanceState(savedInstanceState);
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
-        Logger.t(TAG).w("onSaveInstanceState");
+        Log.w(TAG,"onSaveInstanceState");
         super.onSaveInstanceState(outState);
     }
 

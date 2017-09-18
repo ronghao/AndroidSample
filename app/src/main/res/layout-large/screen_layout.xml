@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+
+    <ImageView
+        android:id="@+id/screen_bg_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/screen_bg"
+        />
+
+    <TextView
+        android:id="@+id/screen_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="31dp"
+        android:text="分辨率："
+        />
+
+    <TextView
+        android:id="@+id/screen_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/screen_textView2"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@id/screen_textView2"
+        android:text="TextView"
+        />
+
+    <TextView
+        android:id="@+id/screen_textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/screen_textView2"
+        android:layout_below="@id/screen_textView2"
+        android:layout_marginTop="20dp"
+        android:text="DPI："
+        />
+
+    <TextView
+        android:id="@+id/screen_textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/screen_textView3"
+        android:layout_alignBottom="@id/screen_textView3"
+        android:layout_alignLeft="@id/screen_textView1"
+        android:text="TextView"
+        />
+
+    <TextView
+        android:id="@+id/screen_textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/screen_textView3"
+        android:layout_below="@id/screen_textView3"
+        android:layout_marginTop="18dp"
+        android:text="使用布局大小："
+        />
+
+    <TextView
+        android:id="@+id/screen_textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/screen_textView5"
+        android:layout_alignBottom="@id/screen_textView5"
+        android:layout_alignLeft="@id/screen_textView4"
+        android:text="@string/layout_name"
+        />
+
+    <TextView
+        android:id="@+id/screen_textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/screen_textView5"
+        android:layout_below="@id/screen_textView5"
+        android:layout_marginTop="26dp"
+        android:text="使用图片："
+        />
+
+    <ImageView
+        android:id="@+id/screen_imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/screen_textView6"
+        android:layout_alignTop="@id/screen_textView7"
+        android:src="@drawable/pic"
+        />
+
+    <ImageView
+        android:id="@+id/screen_ImageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/screen_imageView1"
+        android:layout_toRightOf="@id/screen_imageView1"
+        android:src="@drawable/pic1"
+        />
+
+    <ImageView
+        android:id="@+id/screen_ImageView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/screen_imageView1"
+        android:layout_toRightOf="@id/screen_ImageView2"
+        android:src="@drawable/pic2"
+        />
+
+
+    <ImageView
+        android:id="@+id/screen_ImageView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/screen_imageView1"
+        android:layout_toRightOf="@id/screen_ImageView21"
+        android:src="@drawable/pic3"
+        tools:contentDescription=""
+        />
+
+    <TextView
+        android:id="@+id/screen_textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/screen_textView7"
+        android:layout_below="@id/screen_textView7"
+        android:layout_marginTop="70dp"
+        android:text="图片大小"
+        />
+
+    <TextView
+        android:id="@+id/screen_textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/screen_textView8"
+        android:layout_alignBottom="@id/screen_textView8"
+        android:layout_alignLeft="@id/screen_textView6"
+        android:text="TextView"
+        />
+
+    <TextView
+        android:id="@+id/screen_textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/screen_textView8"
+        android:layout_below="@id/screen_textView8"
+        android:layout_marginTop="80dp"
+        android:text="使用图片："
+        />
+
+    <ImageView
+        android:id="@+id/screen_ImageView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/screen_imageView1"
+        android:layout_alignTop="@id/screen_textView10"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:id="@+id/screen_TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/screen_textView10"
+        android:layout_below="@id/screen_ImageView01"
+        android:layout_marginTop="42dp"
+        android:text="图片大小"
+        />
+
+    <TextView
+        android:id="@+id/screen_TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/screen_TextView02"
+        android:layout_alignBottom="@id/screen_TextView02"
+        android:layout_alignLeft="@id/screen_textView9"
+        android:text="TextView"
+        />
+
+    <TextView
+        android:id="@+id/sceen_TextView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/screen_textView10"
+        android:layout_below="@id/screen_TextView02"
+        android:layout_marginTop="42dp"
+        android:text="屏幕大小"
+        />
+
+    <TextView
+        android:id="@+id/screen_TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/sceen_TextView13"
+        android:layout_alignBottom="@id/sceen_TextView13"
+        android:layout_alignLeft="@id/screen_textView9"
+        android:text="TextView"
+        />
+
+    <ImageView
+        android:id="@+id/screen_imageView11"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_red_light"
+        />
+
+    <TextView
+        android:id="@+id/screen_TextView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/screen_textView10"
+        android:layout_below="@id/screen_TextView04"
+        android:layout_marginTop="12dp"
+        android:text="结论"
+        />
+
+
+  </RelativeLayout>
+</ScrollView>

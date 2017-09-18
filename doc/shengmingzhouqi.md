@@ -1,3 +1,4 @@
+
 ### activity生命周期
 + 启动
     + onCreate -> onStart -> onResume
@@ -22,8 +23,9 @@
 + 横竖屏切换 处理
     + android:configChanges="keyboardHidden|orientation|screenSize"
 + activity崩溃后生命周期
-    + onCreate -> onStart -> onRestoreInstanceState -> onResume
-
+    + 崩溃activity的不执行生命周期 + onCreate -> onStart -> onRestoreInstanceState -> onResume
++ 设置 windowIsTranslucent 为true
+    + onStop不会被调用
 
 # onfinish 任务
 + Dismiss any dialogs the activity was managing

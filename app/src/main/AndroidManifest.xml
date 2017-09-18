@@ -54,6 +54,11 @@
         android:theme="@style/ActAnim3Theme"
         >
     </activity>
+
+    <activity
+        android:name=".activity.ScreenActivity"
+        android:theme="@style/FullTheme">
+    </activity>
   </application>
 
 </manifest>

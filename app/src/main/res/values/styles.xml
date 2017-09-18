@@ -18,6 +18,14 @@
     <item name="android:windowIsTranslucent">true</item>
   </style>
 
+  <style name="FullTheme" parent="Theme.AppCompat.NoActionBar">
+    <item name="windowNoTitle">true</item>
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/transparent</item>
+    <item name="colorAccent">@color/transparent</item>
+    <item name="android:windowFullscreen">true</item>
+  </style>
+
   <style name="ActAnimTheme" parent="Theme.AppCompat.Light.DarkActionBar">
     <!-- Customize your theme here. -->
     <item name="colorPrimary">@color/colorPrimary</item>

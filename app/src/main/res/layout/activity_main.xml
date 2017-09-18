@@ -57,6 +57,14 @@
           android:gravity="center"
           android:text="跳转到Activity动画"
           />
+
+      <TextView
+          android:id="@+id/main_goto_screen"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:gravity="center"
+          android:text="屏幕适配方案"
+          />
     </LinearLayout>
   </ScrollView>
 

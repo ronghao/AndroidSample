@@ -1,6 +1,7 @@
 package com.haohaohu.androidsample;
 
 import android.app.Application;
+import com.blankj.utilcode.util.Utils;
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.FormatStrategy;
 import com.orhanobut.logger.Logger;
@@ -29,6 +30,7 @@ public class BaseApplication extends Application {
 
     private void initialize() {
         initLogger();
+        Utils.init(BaseApplication.this);
     }
 
     private void initLogger() {

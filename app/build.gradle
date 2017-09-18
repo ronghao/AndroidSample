@@ -42,5 +42,6 @@ dependencies {
   compile rootProject.ext.deps.logger
   compile rootProject.ext.deps.rxandroid
   compile rootProject.ext.deps.rxjava
+  compile rootProject.ext.deps.utilcode
   compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
 }

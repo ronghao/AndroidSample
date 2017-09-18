@@ -1,4 +1,4 @@
 <resources>
   <string name="app_name">AndroidSample</string>
-  <string name="layout_name">layout</string>
+  <string name="layout_name">layout-xlarge</string>
 </resources>
