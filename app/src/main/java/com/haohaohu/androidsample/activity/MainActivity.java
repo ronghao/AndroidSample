@@ -2,15 +2,12 @@ package com.haohaohu.androidsample.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.HandlerThread;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import com.haohaohu.androidsample.R;
 import com.haohaohu.androidsample.activity.actanim.ActAnimActivity;
 import com.haohaohu.androidsample.activity.java.JavaActivity;
 import com.haohaohu.androidsample.activity.life.LifeActivity;
-import com.orhanobut.logger.Logger;
 
 /**
  * 主activity
@@ -81,18 +78,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ScreenActivity.class);
                 startActivity(intent);
-            }
-        });
-    }
-
-    public void post() {
-        HandlerThread thread = new HandlerThread("name");
-        thread.start();
-        Handler handler = new Handler(thread.getLooper());
-        handler.post(new Runnable() {
-            @Override
-            public void run() {
-                Logger.e("thread");
             }
         });
     }

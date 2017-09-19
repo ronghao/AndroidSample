@@ -35,26 +35,20 @@
     </activity>
     <activity
         android:name=".activity.actanim.ActAnimActivity"
-        android:theme="@style/ActAnimTheme"
-        >
+        android:theme="@style/ActAnimTheme">
     </activity>
     <activity
         android:name=".activity.actanim.ActAnim1Activity"
-        android:theme="@style/ActAnim1Theme"
-        >
+        android:theme="@style/ActAnim1Theme">
     </activity>
     <activity
         android:name=".activity.actanim.ActAnim2Activity"
-        android:theme="@style/ActAnim2Theme"
-        >
+        android:theme="@style/ActAnim2Theme">
     </activity>
-
     <activity
         android:name=".activity.actanim.ActAnim3Activity"
-        android:theme="@style/ActAnim3Theme"
-        >
+        android:theme="@style/ActAnim3Theme">
     </activity>
-
     <activity
         android:name=".activity.ScreenActivity"
         android:theme="@style/FullTheme">
