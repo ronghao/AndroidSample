@@ -53,6 +53,8 @@
         android:name=".activity.ScreenActivity"
         android:theme="@style/FullTheme">
     </activity>
+    <activity android:name=".activity.WaveViewActivity">
+    </activity>
   </application>
 
 </manifest>
