@@ -12,4 +12,16 @@
 
   <!--自定义颜色-->
   <color name="main_bg_color">#f1f6f7</color>
+
+
+  <!-- A light Holo shade of blue -->
+  <color name="line_1_start_color">#df33b5e5</color>
+  <!-- A light Holo shade of gray -->
+  <color name="line_1_end_color">#f3ffffff</color>
+
+  <color name="line_color">#14EEC9</color>
+
+  <color name="transparent_white">#10ffffff</color>
+
+
 </resources>
