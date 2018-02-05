@@ -73,6 +73,14 @@
           android:gravity="center"
           android:text="波浪动画"
           />
+
+      <TextView
+          android:id="@+id/main_goto_constraint_layout"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:gravity="center"
+          android:text="ConstraintLayout"
+          />
     </LinearLayout>
   </ScrollView>
 

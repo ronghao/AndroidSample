@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.haohaohu.androidsample.activity.WaveViewActivity"
+    tools:context="com.haohaohu.androidsample.activity.wave.WaveViewActivity"
     >
 
-  <com.haohaohu.androidsample.activity.WaveView
+  <com.haohaohu.androidsample.activity.wave.WaveView
       android:id="@+id/wave_wave"
       android:layout_width="match_parent"
       android:layout_height="400dp"

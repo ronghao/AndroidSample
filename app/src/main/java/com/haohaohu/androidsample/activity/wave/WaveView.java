@@ -1,4 +1,4 @@
-package com.haohaohu.androidsample.activity;
+package com.haohaohu.androidsample.activity.wave;
 
 import android.content.Context;
 import android.graphics.Canvas;

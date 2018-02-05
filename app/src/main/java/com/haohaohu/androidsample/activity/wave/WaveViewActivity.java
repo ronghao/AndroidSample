@@ -1,4 +1,4 @@
-package com.haohaohu.androidsample.activity;
+package com.haohaohu.androidsample.activity.wave;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

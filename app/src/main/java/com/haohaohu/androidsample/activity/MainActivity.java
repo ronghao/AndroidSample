@@ -8,6 +8,7 @@ import com.haohaohu.androidsample.R;
 import com.haohaohu.androidsample.activity.actanim.ActAnimActivity;
 import com.haohaohu.androidsample.activity.java.JavaActivity;
 import com.haohaohu.androidsample.activity.life.LifeActivity;
+import com.haohaohu.androidsample.activity.wave.WaveViewActivity;
 
 /**
  * 主activity
@@ -85,6 +86,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, WaveViewActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.main_goto_constraint_layout).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ConstraintLayoutActivity.class);
                 startActivity(intent);
             }
         });
