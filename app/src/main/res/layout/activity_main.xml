@@ -81,6 +81,14 @@
           android:gravity="center"
           android:text="ConstraintLayout"
           />
+
+      <TextView
+          android:id="@+id/main_goto_launcher"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:gravity="center"
+          android:text="Launcher"
+          />
     </LinearLayout>
   </ScrollView>
 

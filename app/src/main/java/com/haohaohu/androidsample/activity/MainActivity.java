@@ -98,5 +98,13 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                 });
+
+        findViewById(R.id.main_goto_launcher).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, LauncherActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
