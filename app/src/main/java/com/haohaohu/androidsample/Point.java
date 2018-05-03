@@ -38,7 +38,7 @@ public class Point {
             } else {
                 aa = Math.abs(aa);
             }
-            return aa*8;
+            return aa * 8;
         }
     }
 }

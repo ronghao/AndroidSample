@@ -1,7 +1,7 @@
 package com.haohaohu.androidsample.activity.wave;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import com.haohaohu.androidsample.R;
 
 public class WaveViewActivity extends AppCompatActivity {

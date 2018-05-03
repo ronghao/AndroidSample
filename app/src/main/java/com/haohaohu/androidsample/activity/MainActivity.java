@@ -89,13 +89,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        findViewById(R.id.main_goto_constraint_layout).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ConstraintLayoutActivity.class);
-                startActivity(intent);
-            }
-        });
-
+        findViewById(R.id.main_goto_constraint_layout).setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent =
+                                new Intent(MainActivity.this, ConstraintLayoutActivity.class);
+                        startActivity(intent);
+                    }
+                });
     }
 }

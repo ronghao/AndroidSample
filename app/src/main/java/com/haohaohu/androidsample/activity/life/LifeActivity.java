@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import com.haohaohu.androidsample.R;
-import com.orhanobut.logger.Logger;
 
 public class LifeActivity extends AppCompatActivity {
 
@@ -17,7 +16,7 @@ public class LifeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_life);
-        Log.w(TAG,"onCreate");
+        Log.w(TAG, "onCreate");
         init();
     }
 
@@ -34,50 +33,50 @@ public class LifeActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        Log.w(TAG,"onStart");
+        Log.w(TAG, "onStart");
     }
 
     @Override
 
     protected void onResume() {
         super.onResume();
-        Log.w(TAG,"onResume");
+        Log.w(TAG, "onResume");
     }
 
     @Override
     protected void onPause() {
-        Log.w(TAG,"onPause");
+        Log.w(TAG, "onPause");
         super.onPause();
     }
 
     @Override
     protected void onStop() {
-        Log.w(TAG,"onStop");
+        Log.w(TAG, "onStop");
         super.onStop();
     }
 
     @Override
     protected void onDestroy() {
-        Log.w(TAG,"onDestroy");
+        Log.w(TAG, "onDestroy");
         super.onDestroy();
     }
 
     @Override
 
     protected void onRestart() {
-        Log.w(TAG,"onRestart");
+        Log.w(TAG, "onRestart");
         super.onRestart();
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        Log.w(TAG,"onRestoreInstanceState");
+        Log.w(TAG, "onRestoreInstanceState");
         super.onRestoreInstanceState(savedInstanceState);
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
-        Log.w(TAG,"onSaveInstanceState");
+        Log.w(TAG, "onSaveInstanceState");
         super.onSaveInstanceState(outState);
     }
 

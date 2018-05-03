@@ -26,13 +26,14 @@ import java.util.Random;
  */
 public class WaveView extends SurfaceView implements SurfaceHolder.Callback, Runnable {
 
+    Random random = new Random();
+    int line_1_start_color = randomColor(90);
     // SurfaceHolder
     private SurfaceHolder mHolder;
     // 用于绘图的Canvas
     private Canvas mCanvas;
     // 子线程标志位
     private boolean mIsDrawing;
-
     private Path mPath;
     private Path mWhitePath;
     private Paint mTextPaint;
@@ -40,21 +41,14 @@ public class WaveView extends SurfaceView implements SurfaceHolder.Callback, Run
     private Paint mWhitePaint;
     private Paint mTransWhitePaint;
     private Paint mBgPaint;
-
     private float width;
     private float height;
     private float halfWidth;
     private float halfHeight;
-
     private int maxsize = 4;
-
     private Points points = new Points();
     private Point point;
     private int index = 0;
-
-    Random random = new Random();
-
-    int line_1_start_color = randomColor(90);
 
     public WaveView(Context context) {
         super(context);
@@ -69,6 +63,12 @@ public class WaveView extends SurfaceView implements SurfaceHolder.Callback, Run
     public WaveView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initView();
+    }
+
+    static int randomColor(int alpha) {
+        Random rnd = new Random();
+        alpha = Math.min(Math.max(1, alpha), 255);
+        return Color.argb(alpha, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
     }
 
     private void initView() {
@@ -306,12 +306,6 @@ public class WaveView extends SurfaceView implements SurfaceHolder.Callback, Run
         double sinFunc = Math.sin(0.75 * tmpx + 0.5 * Math.PI);//这里的offset * Math.PI是偏移量φ
         double recessionFunc = 20 / (20 + Math.pow(tmpx, 4));
         return (float) (sinFunc * recessionFunc * 8 * type) / size + halfHeight;
-    }
-
-    static int randomColor(int alpha) {
-        Random rnd = new Random();
-        alpha = Math.min(Math.max(1, alpha), 255);
-        return Color.argb(alpha, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
     }
 
     public ColorMatrix setContrast(float contrast) {

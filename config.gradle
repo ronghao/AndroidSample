@@ -48,8 +48,8 @@ ext {
           googlelifecycleextensions: "android.arch.lifecycle:extensions:${depsVersion.archlifecycle}",
           googlelifecyclecompiler  : "android.arch.lifecycle:compiler:${depsVersion.archlifecycle}",
           /*rx*/
-          rxandroid                : "io.reactivex.rxjava2:rxandroid:2.0.1",
-          rxjava                   : "io.reactivex.rxjava2:rxjava:2.1.2",
+          rxandroid                : "io.reactivex.rxjava2:rxandroid:2.0.2",
+          rxjava                   : "io.reactivex.rxjava2:rxjava:2.1.13",
           /*缓存框架*/
           CacheManage              : 'com.github.ronghao:CacheManage:1.0.2',
           /*帧动画框架*/
