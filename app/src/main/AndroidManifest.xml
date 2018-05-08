@@ -3,6 +3,7 @@
     package="com.haohaohu.androidsample">
 
   <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+
   <application
       android:name=".BaseApplication"
       android:allowBackup="true"
@@ -12,14 +13,14 @@
       android:roundIcon="@mipmap/ic_launcher_round"
       android:supportsRtl="true"
       android:theme="@style/AppTheme">
-
     <activity
         android:name=".activity.MainActivity"
         android:theme="@style/LaunchTheme">
-      <!--<intent-filter>-->
-      <!--<action android:name="android.intent.action.MAIN"/>-->
-      <!--<category android:name="android.intent.category.LAUNCHER"/>-->
-      <!--</intent-filter>-->
+
+      <!-- <intent-filter> -->
+      <!-- <action android:name="android.intent.action.MAIN"/> -->
+      <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
+      <!-- </intent-filter> -->
     </activity>
     <activity android:name=".activity.LinearLayoutActivity">
     </activity>
@@ -62,27 +63,11 @@
         android:enabled="false">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
+
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
     </activity>
-    <activity android:name=".activity.ConstraintLayoutActivity">
-    </activity>
 
-
-    <activity-alias
-        android:name=".activity.StartShowActivity"
-        android:configChanges="orientation|keyboardHidden|fontScale|screenSize"
-        android:enabled="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="启动"
-        android:screenOrientation="portrait"
-        android:targetActivity="com.haohaohu.androidsample.activity.LauncherActivity"
-        android:theme="@style/AppTheme">
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN"/>
-        <category android:name="android.intent.category.LAUNCHER"/>
-      </intent-filter>
-    </activity-alias>
     <activity-alias
         android:name=".activity.StartHideActivity"
         android:configChanges="orientation|keyboardHidden|fontScale|screenSize"
@@ -90,15 +75,45 @@
         android:icon="@mipmap/ic_launcher"
         android:label="隐藏"
         android:screenOrientation="portrait"
-        android:targetActivity="com.haohaohu.androidsample.activity.LauncherActivity"
+        android:targetActivity=".activity.LauncherActivity"
         android:theme="@style/AppTheme">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
+        <action android:name="com.haohaohu.androidsample"/>
 
         <category android:name="android.intent.category.HOME"/>
         <category android:name="android.intent.category.DEFAULT"/>
       </intent-filter>
     </activity-alias>
-  </application>
-</manifest>
+    <activity-alias
+        android:name=".activity.StartShowActivity"
+        android:configChanges="orientation|keyboardHidden|fontScale|screenSize"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="启动"
+        android:screenOrientation="portrait"
+        android:targetActivity=".activity.LauncherActivity"
+        android:theme="@style/AppTheme">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <action android:name="com.haohaohu.androidsample"/>
 
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity-alias>
+
+    <activity android:name=".activity.ConstraintLayoutActivity">
+    </activity>
+
+    <receiver android:name=".appwidget.MyAppWidget">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+      </intent-filter>
+
+      <meta-data
+          android:name="android.appwidget.provider"
+          android:resource="@xml/my_app_widget_info"/>
+    </receiver>
+  </application>
+
+</manifest>

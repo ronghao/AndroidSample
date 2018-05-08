@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 import com.blankj.utilcode.util.SPUtils;
 import com.haohaohu.androidsample.R;
 import java.util.List;
@@ -25,8 +26,8 @@ public class LauncherActivity extends AppCompatActivity {
     private Switch mSwitch;
     private TextView mValue;
 
-    String startShowPath = "com.haohaohu.androidsample.activity.StartShowActivity";
-    String startHidePath = "com.haohaohu.androidsample.activity.StartHideActivity";
+    public final String startShowPath = "com.haohaohu.androidsample.activity.StartShowActivity";
+    public final String startHidePath = "com.haohaohu.androidsample.activity.StartHideActivity";
     private SPUtils spUtils;
 
     @Override
@@ -48,7 +49,13 @@ public class LauncherActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 showAPP(b);
                 mValue.setText(b ? "显示" : "不显示");
-                finish();
+                Toast.makeText(LauncherActivity.this, "3秒后退出", Toast.LENGTH_SHORT).show();
+                mSwitch.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        LauncherActivity.this.finish();
+                    }
+                }, 3000);
             }
         });
     }

@@ -1,4 +1,6 @@
 <resources>
   <string name="app_name">AndroidSample</string>
   <string name="layout_name">layout</string>
+  <string name="appwidget_text">EXAMPLE</string>
+  <string name="add_widget">Add widget</string>
 </resources>
